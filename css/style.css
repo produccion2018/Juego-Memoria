@@ -15,6 +15,7 @@ body {
     color: #2d3436;
 }
 
+/* Contenedor principal */
 .mauro-container {
     text-align: center;
     background-color: #ffffff;
@@ -26,6 +27,7 @@ body {
     animation: fadeIn 0.6s ease-in-out;
 }
 
+/* Título principal */
 .mauro-title {
     font-size: 2em; /* Título más pequeño */
     color: #1e272e;
@@ -35,6 +37,7 @@ body {
     letter-spacing: 1px; /* Menos espacio entre letras */
 }
 
+/* Diseño del tablero de juego */
 .mauro-board {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -43,6 +46,7 @@ body {
     margin-bottom: 25px;
 }
 
+/* Estilo de las cartas */
 .mauro-card {
     width: 90px; /* Tamaño reducido */
     height: 90px; /* Tamaño reducido */
@@ -69,6 +73,7 @@ body {
     color: #1e272e;
 }
 
+/* Estilo del botón de reiniciar */
 .mauro-restart {
     background-color: #ff6348;
     color: #fff;
@@ -87,12 +92,14 @@ body {
     transform: scale(1.05);
 }
 
+/* Estilo de las cartas emparejadas */
 .mauro-card.matched {
     background-color: #27ae60;
     color: white;
     box-shadow: 0 8px 15px #27ae6033;
 }
 
+/* Animación de las cartas al fallar */
 .mauro-card.shake {
     animation: shake 0.5s ease-in-out;
 }
@@ -140,4 +147,63 @@ body {
 .swal2-confirm:hover {
     background-color: #e74c3c;
     transform: scale(1.05);
+}
+
+/* Media Queries para hacerlo responsive */
+
+/* Para tabletas */
+@media (max-width: 768px) {
+    .mauro-container {
+        padding: 20px;
+    }
+
+    .mauro-title {
+        font-size: 1.6em;
+    }
+
+    .mauro-board {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .mauro-card {
+        width: 80px;
+        height: 80px;
+        font-size: 1.8em;
+    }
+
+    .mauro-restart {
+        font-size: 1.2em;
+        padding: 12px 24px;
+    }
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .mauro-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .mauro-title {
+        font-size: 1.4em;
+    }
+
+    .mauro-board {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mauro-card {
+        width: 70px;
+        height: 70px;
+        font-size: 1.6em;
+    }
+
+    .mauro-restart {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
 }
