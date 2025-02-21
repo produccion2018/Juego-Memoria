@@ -95,7 +95,7 @@ body {
 /* Estilo de las cartas emparejadas */
 .mauro-card.matched {
     background-color: #27ae60;
-    color: white;
+    color: #ffffff;
     box-shadow: 0 8px 15px #27ae6033;
 }
 
@@ -141,7 +141,7 @@ body {
     border-radius: 10px;
     padding: 12px 24px;
     border: none;
-    color: white;
+    color: #ffffff;
 }
 
 .swal2-confirm:hover {
@@ -162,7 +162,7 @@ body {
     }
 
     .mauro-board {
-        grid-template-columns: repeat(4, 1fr); /* Cambiado a 4 columnas */
+        grid-template-columns: repeat(4, 1fr); 
     }
 
     .mauro-card {
@@ -193,7 +193,7 @@ body {
     }
 
     .mauro-board {
-        grid-template-columns: repeat(4, 1fr); /* Cambiado a 4 columnas */
+        grid-template-columns: repeat(4, 1fr); 
     }
 
     .mauro-card {
